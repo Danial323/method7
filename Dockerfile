@@ -1,4 +1,4 @@
-# 1) choose base container
+i# 1) choose base container
 # generally use the most recent tag
 
 # data science notebook
@@ -19,7 +19,7 @@ USER root
 RUN	apt-get install htop
 
 # 3) install packages
-RUN pip install --no-cache-dir networkx scipy pandas sklearn numpy matplotlib re datetime
+RUN pip install --no-cache-dir networkx scipy pandas sklearn numpy matplotlib re DateTime os
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
