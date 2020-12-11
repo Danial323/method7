@@ -19,7 +19,8 @@ USER root
 RUN	apt-get install htop
 
 # 3) install packages
-RUN pip install --no-cache-dir networkx scipy pandas sklearn numpy matplotlib regex DateTime os-sys
+RUN pip install --no-cache-dir networkx scipy pandas sklearn numpy 
+# matplotlib regex DateTime os-sys
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
